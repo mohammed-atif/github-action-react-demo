@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 
+import MyButton from './components/MyButton/MyButton';
+
+const handleClick = () => {
+  alert('OnClick called');
+}
+
 function App() {
   return (
     <div className="App">
@@ -18,7 +24,10 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+      <body>
+        <MyButton text='Hello World' type='primary' onClick={handleClick} />
+      </body>
+    </div >
   );
 }
 
