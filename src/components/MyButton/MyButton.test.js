@@ -1,4 +1,4 @@
-import { mount, render, shallow } from 'enzyme';
+import { render, shallow } from 'enzyme';
 import MyButton from './MyButton';
 
 describe('Renders the Button', () => {
